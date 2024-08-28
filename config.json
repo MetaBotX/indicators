@@ -1,0 +1,32 @@
+{
+    "binance_api_key": "your_api_key_here",
+    "binance_secret": "your_secret_here",
+    "database_name_format": "{timeframe}-{symbol}.db",
+    "symbol": "BTC/USDT",
+    "timeframe": "1m",
+    "update_interval": 10,
+    "initial_fetch_days": 2,
+    "indicators": {
+        "rsi": {
+            "enabled": true,
+            "period": 14
+        },
+        "macd": {
+            "enabled": true,
+            "fast_period": 12,
+            "slow_period": 26,
+            "signal_period": 9
+        },
+        "stoch_rsi": {
+            "enabled": true,
+            "period": 14,
+            "smooth_k": 3,
+            "smooth_d": 3
+        },
+        "ema": {
+            "enabled": true,
+            "short_period": 12,
+            "long_period": 26
+        }
+    }
+}
